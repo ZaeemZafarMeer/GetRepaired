@@ -12,9 +12,11 @@
 		2C84D7B321F6E6E6007FFD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C84D7B121F6E6E6007FFD10 /* Main.storyboard */; };
 		2C84D7B521F6E6E7007FFD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C84D7B421F6E6E7007FFD10 /* Assets.xcassets */; };
 		2C84D7B821F6E6E7007FFD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C84D7B621F6E6E7007FFD10 /* LaunchScreen.storyboard */; };
+		9764F63237E8527F37540F5F /* Pods_GetRepaired.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CF7FC420FFC2A73DCBD71F /* Pods_GetRepaired.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03CF7FC420FFC2A73DCBD71F /* Pods_GetRepaired.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetRepaired.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C84D7AA21F6E6E6007FFD10 /* GetRepaired.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetRepaired.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C84D7AD21F6E6E6007FFD10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C84D7AF21F6E6E6007FFD10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		2C84D7B421F6E6E7007FFD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C84D7B721F6E6E7007FFD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C84D7B921F6E6E7007FFD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B01122BC9F9D0256EDCA61E /* Pods-GetRepaired.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetRepaired.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetRepaired/Pods-GetRepaired.release.xcconfig"; sourceTree = "<group>"; };
+		7B251BE150DE133F1E269A4F /* Pods-GetRepaired.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetRepaired.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetRepaired/Pods-GetRepaired.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9764F63237E8527F37540F5F /* Pods_GetRepaired.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2C84D7AC21F6E6E6007FFD10 /* GetRepaired */,
 				2C84D7AB21F6E6E6007FFD10 /* Products */,
+				D3623CAA172F7D68928DF354 /* Pods */,
+				F54D175EE0E8B220287C85E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = GetRepaired;
 			sourceTree = "<group>";
 		};
+		D3623CAA172F7D68928DF354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B251BE150DE133F1E269A4F /* Pods-GetRepaired.debug.xcconfig */,
+				4B01122BC9F9D0256EDCA61E /* Pods-GetRepaired.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F54D175EE0E8B220287C85E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03CF7FC420FFC2A73DCBD71F /* Pods_GetRepaired.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C84D7BC21F6E6E7007FFD10 /* Build configuration list for PBXNativeTarget "GetRepaired" */;
 			buildPhases = (
+				7B9B9ADD5EDA2E19B5D8D74D /* [CP] Check Pods Manifest.lock */,
 				2C84D7A621F6E6E6007FFD10 /* Sources */,
 				2C84D7A721F6E6E6007FFD10 /* Frameworks */,
 				2C84D7A821F6E6E6007FFD10 /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B9B9ADD5EDA2E19B5D8D74D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetRepaired-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C84D7A621F6E6E6007FFD10 /* Sources */ = {
@@ -280,6 +330,7 @@
 		};
 		2C84D7BD21F6E6E7007FFD10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B251BE150DE133F1E269A4F /* Pods-GetRepaired.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +349,7 @@
 		};
 		2C84D7BE21F6E6E7007FFD10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B01122BC9F9D0256EDCA61E /* Pods-GetRepaired.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
